@@ -175,7 +175,7 @@ func (us *SUpdateSession) SaveUpdateSql(dt interface{}) (*SUpdateSQLResult, erro
 				continue
 			}
 		}
-		if c.IsZero(nf) && c.IsText() {
+		if c.IsZero(nf) && c.IsDateTime() {
 			nf = nil
 		}
 		setters = append(setters, SUpdateDiff{old: of, new: nf, col: c})
