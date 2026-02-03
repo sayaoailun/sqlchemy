@@ -3,6 +3,7 @@ module yunion.io/x/sqlchemy
 go 1.17
 
 require (
+	gitee.com/chunanyong/dm v1.8.14
 	github.com/ClickHouse/clickhouse-go v1.5.4
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang-plus/uuid v1.0.0
@@ -14,7 +15,6 @@ require (
 )
 
 require (
-	gitee.com/chunanyong/dm v1.8.14 // indirect
 	github.com/cloudflare/golz4 v0.0.0-20150217214814-ef862a3cdc58 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/golang-plus/errors v1.0.0 // indirect

@@ -47,7 +47,7 @@ func SQLPrintf(sqlstr string, variables []interface{}) string {
 		case string:
 			sqlstr = strings.Replace(sqlstr, "?", fmt.Sprintf("'%s'", v), 1)
 		case time.Time:
-			sqlstr = strings.Replace(sqlstr, "?", fmt.Sprintf("'%s'", vv.UTC().Format(time.DateTime)), 1)
+			sqlstr = strings.Replace(sqlstr, "?", fmt.Sprintf("'%s'", vv.UTC().Format(time.RFC3339)), 1)
 		default:
 			sqlstr = strings.Replace(sqlstr, "?", fmt.Sprintf("'%v'", v), 1)
 		}
